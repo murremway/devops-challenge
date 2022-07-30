@@ -9,11 +9,11 @@ app = Flask(__name__)
 setup_metrics(app)
 
 @app.route('/ping/')
-def test():
+def ping():
     return 'pong'
 
 @app.route('/ping1/')
-def test1():
+def ping1():
     1/0
     return 'pong'
 
